@@ -1,17 +1,18 @@
 import './App.css';
-import { MortyProvider } from './MortyContext';
-import MortyList from './components/MortyList';
+import { CharactersProvider } from './CharactersContext';
+import CharactersList from './components/CharactersList';
+import Filters from './components/Filters';
 
 function App() {
-  console.log('App');
   return (
-    <MortyProvider>
+    <CharactersProvider>
       <div className="App">
         <h1>Rick and Morty characters</h1>
         <h2>Dead Morty</h2>
-        <MortyList />
+        <Filters />
+        <CharactersList />
       </div>
-    </MortyProvider>
+    </CharactersProvider>
   );
 }
 

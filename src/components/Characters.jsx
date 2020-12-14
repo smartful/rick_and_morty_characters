@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Morty({name, location, imageSrc}) {
-  const mortyStyle = {
+function Character({name, location, imageSrc}) {
+  const characterStyle = {
     border: '3px solid #61dafb',
     borderRadius: '6px',
     padding: '10px',
@@ -9,11 +9,11 @@ function Morty({name, location, imageSrc}) {
   }
 
   return (
-    <div style={mortyStyle}>
+    <div style={characterStyle}>
       {name} - {location} <br />
-      <img src={imageSrc} alt='morty image' />
+      <img src={imageSrc} alt='character image' />
     </div>
   );
 }
 
-export default Morty;
+export default Character;
